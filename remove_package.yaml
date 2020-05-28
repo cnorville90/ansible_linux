@@ -1,6 +1,7 @@
 ---
 - name: A Playbook to remove a specified package
   hosts: all
+  become: true
   vars:
     package: tree
 
