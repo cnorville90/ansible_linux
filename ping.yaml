@@ -1,0 +1,9 @@
+---
+- name: A very simple playbook to see if a host is reponsive
+  hosts: nodes
+
+  
+  tasks:
+
+    - name: Ping a host
+      ping:

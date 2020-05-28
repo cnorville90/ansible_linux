@@ -1,0 +1,2 @@
+[nodes]
+caesar ansible_user=cnorville 
