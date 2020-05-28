@@ -7,7 +7,7 @@
 
   tasks:
 
-    - name: install package: "{{ package }}"
+    - name: install "{{ package }}"
       yum:
         name: "{{ package }}"
         state: latest

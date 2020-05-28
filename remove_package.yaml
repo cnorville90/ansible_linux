@@ -7,7 +7,7 @@
 
   tasks:
 
-    - name: Remove package: "{{ package }}"
+    - name: Remove "{{ package }}"
       yum:
         name: "{{ package }}"
         state: absent
