@@ -1,0 +1,14 @@
+---
+- name: A Playbook to remove a specified package
+  hosts: all
+  become: true
+  vars:
+    package: tree
+
+  tasks:
+
+    - name: Remove a package
+      yum:
+        name: tree
+        state: latest
+  
