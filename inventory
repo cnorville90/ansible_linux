@@ -1,2 +1,4 @@
 [nodes]
-caesar ansible_user=cnorville 
+caesar   ansible_user=cnorville 
+attila   ansible_user=cnorville
+hannibal ansible_user=cnorville
