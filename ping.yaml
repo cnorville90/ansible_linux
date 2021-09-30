@@ -1,6 +1,7 @@
 ---
 - name: A very simple playbook to see if a host is reponsive
   hosts: nodes
+  gather_facts: false
 
   
   tasks:
