@@ -1,6 +1,6 @@
 ---
 - name: A simple playbook to see if a url is alive
-  hosts: all
+  hosts: localhost
   gather_facts: false
 
   tasks:
