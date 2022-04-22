@@ -1,0 +1,17 @@
+---
+- name: A simple playbook to see if a url is alive
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: Test to see if a website is active
+      uri:
+        url: http://www.google.com
+        return_content: yes
+      register: content
+
+    - name: Dump out the returned content
+      debug: 
+        var: content
+
