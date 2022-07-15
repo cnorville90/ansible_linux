@@ -1,0 +1,16 @@
+---
+- name: A Playbook to install a specified package
+  hosts: all
+  become: true
+  gather_facts: no
+
+  vars:
+    package: tree
+
+  tasks:
+
+    - name: install "{{ package }}"
+      yum:
+        name: "{{ package }}"
+        state: latest
+  
